@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "administratorLogin": {
+      "value": "Admin1998"
+    },
+    "administratorLoginPassword": {
+      "value": "N@ga1998"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "serverName": {
+      "value": "qrtesting"
+    },
+    "serverEdition": {
+      "value": "GeneralPurpose"
+    },
+    "storageSizeMB": {
+      "value": 131072
+    },
+    "haEnabled": {
+      "value": "Disabled"
+    },
+    "availabilityZone": {
+      "value": null
+    },
+    "version": {
+      "value": "13"
+    },
+    "tags": {
+      "value": {}
+    },
+    "firewallRules": {
+      "value": {
+        "rules": []
+      }
+    },
+    "backupRetentionDays": {
+      "value": 7
+    },
+    "geoRedundantBackup": {
+      "value": "Disabled"
+    },
+    "vmName": {
+      "value": "Standard_D2ds_v4"
+    },
+    "publicNetworkAccess": {
+      "value": "Enabled"
+    },
+    "vnetData": {
+      "value": {
+        "virtualNetworkName": "testVnet",
+        "subnetName": "testSubnet",
+        "virtualNetworkAddressPrefix": "10.0.0.0/16",
+        "virtualNetworkResourceGroupName": "[resourceGroup().name]",
+        "location": "eastus2",
+        "subscriptionId": "[subscription().subscriptionId]",
+        "subnetProperties": {},
+        "delegatedSubnetArguments": {},
+        "isNewVnet": false,
+        "subnetNeedsUpdate": false,
+        "privateDnsZoneArguments": {}
+      }
+    }
+  }
+}
